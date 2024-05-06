@@ -49,7 +49,6 @@ export default {
       name: 'preview_url',
       title: 'Preview URL',
       type: 'string',
-      validation: (rule: any) => rule.required(),
     },
     // ? Github Url
     {
@@ -89,9 +88,16 @@ export default {
       type: 'boolean',
       validation: (rule: any) => rule.required(),
     },
+    {
+      title: 'Tags',
+      name: 'Tag',
+      description: 'Eg: Responsive design, Frontend',
+      type: 'array',
+      of: [{type: 'string'}],
+    },
     // ? tech used
     {
-      name: 'techstack_ref',
+      name: 'techstackref',
       title: 'Tech used',
       type: 'array',
       of: [

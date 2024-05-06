@@ -27,26 +27,10 @@ export default {
       validation: (rule: any) => rule.required(),
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'caption',
-          type: 'string',
-          title: 'Caption',
-          validation: (rule: any) => rule.required(),
-        },
-        {
-          name: 'attribution',
-          type: 'string',
-          title: 'Attribution',
-          validation: (rule: any) => rule.required(),
-        },
-      ],
+      name: 'icon',
+      title: 'Icon',
+      type: 'string',
+      description: `Icon text from iconify. EG: "vscode-icons:file-type-reactjs"`,
       validation: (rule: any) => rule.required(),
     },
     {
